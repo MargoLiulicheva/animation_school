@@ -87,7 +87,7 @@
             <p>Звоните, пишите или приезжайте, мы всегда рады новым знакомствам!</p>
         </div>
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.5109976582843!2d30.43023631605848!3d59.939404681886254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDQ4JzQwLjYiTiAzMMKwMjAnNTkuNiJF!5e0!3m2!1sru!2sru!4v1632513836613!5m2!1sru!2sru&ll=59.939333,30.432722" 
+            <iframe src="https://maps.google.com/maps?q=59.923861,30.360167&z=15&output=embed"
             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        
         </div>
     </div>
