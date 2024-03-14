@@ -1,6 +1,5 @@
 % rebase('layout.tpl', title=title, year=year)
 
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -32,19 +31,36 @@
             border-radius: 10px;
         }
         .text-info {
-            flex: 1;
-            padding: 20px;
+        flex: 1;
+        padding: 30px;
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         .text-info h2 {
             color: #333;
+            font-size: 2em;
         }
         .text-info p {
             color: #666;
+            font-size: 1.2em;
             margin-top: 10px;
         }
         .map-container {
             flex: 1;
-            height: 400px;
+            height: 400px; /* Увеличиваем высоту контейнера с картой */
+            width: 500px;
             border: 1px solid #ccc;
             margin-left: 20px;
             border-radius: 10px;
@@ -66,7 +82,7 @@
             <p>Санкт-Петербург, ул. Магнитогорская, д.51Е офис 313</p>
         </div>
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7725.67916039622!2d30.332597576429296!3d59.92362614919492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469632f3ce478847%3A0x9e5656227b7f6127!2z0J_QsNGA0L7QstC60LjQvdGB0LrQuNC5INC_0YDQs9GA0LDQv9GB0YLQtdC90L7QstCwLCA1MQ!5e0!3m2!1sru!2sru!4v1630590098512!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/@59.9393777,30.4324246,20z?entry=ttu" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 </body>
