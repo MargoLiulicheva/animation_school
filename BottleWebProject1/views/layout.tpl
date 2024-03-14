@@ -22,7 +22,6 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/home">Главная</a></li>
                     <li><a href="/about">Услуги</a></li>
                     <li><a href="/contact">Контакты</a></li>
                 </ul>
