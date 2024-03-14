@@ -7,7 +7,7 @@
     <title>{{ title }}</title>
     <style>
         body {
-            background-image: url('static/images/fon.webp');
+            background-image: url('static/images/fon.jpg');
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             margin: 0;
