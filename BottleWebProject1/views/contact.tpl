@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>Contacts</title>
     <style>
         body {
             background-image: url('static/images/fon.jpg');
@@ -14,45 +14,51 @@
             padding: 0;
             background-size: cover;
             background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        h2 {
-            color: #333;
+        .content {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
         }
-        h3 {
-            color: #666;
-        }
-        address {
-            margin-top: 20px;
-            font-style: normal;
+        .text-info {
+            flex: 1;
+            padding: 20px;
         }
         .map-container {
-            margin-top: 20px;
-            width: 100%;
+            flex: 1;
             height: 400px;
             border: 1px solid #ccc;
+            margin-left: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
     </style>
 </head>
 <body>
-    <h2>{{ title }}</h2>
-    <h3>{{ message }}</h3>
-
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
-
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
-
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.154541970036!2d-122.12920978437234!3d47.64126857918573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549012f6c58eaf43%3A0xe7c8bdfb7c5b5d47!2sMicrosoft%20Redmond%20Campus!5e0!3m2!1sen!2sus!4v1630588483458!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="content">
+        <div class="text-info">
+            <h2>КОНТАКТЫ</h2>
+            <p>+7 (911) 123-45-67</p>
+            <p><a href="mailto:animationschool@yandex.ru">animationschool@yandex.ru</a></p>
+            <p>Санкт-Петербург, ул. Магнитогорская, д.51Е офис 313</p>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7725.67916039622!2d30.332597576429296!3d59.92362614919492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469632f3ce478847%3A0x9e5656227b7f6127!2z0J_QsNGA0L7QstC60LjQvdGB0LrQuNC5INC_0YDQs9GA0LDQv9GB0YLQtdC90L7QstCwLCA1MQ!5e0!3m2!1sru!2sru!4v1630590098512!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </div>
 </body>
 </html>
-
 
