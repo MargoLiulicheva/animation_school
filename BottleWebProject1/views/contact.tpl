@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Контакты</title>
     <style>
         body {
             background-image: url('static/images/fon.jpg');
@@ -31,6 +31,13 @@
         .text-info {
             flex: 1;
             padding: 20px;
+        }
+        .text-info h2 {
+            color: #333;
+        }
+        .text-info p {
+            color: #666;
+            margin-top: 10px;
         }
         .map-container {
             flex: 1;
@@ -61,4 +68,3 @@
     </div>
 </body>
 </html>
-

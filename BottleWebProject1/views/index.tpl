@@ -1,29 +1,49 @@
-% rebase('layout.tpl', title='Home Page', year=year)
+% rebase('layout.tpl', title='Школа анимации', year=year)
 
-<div class="jumbotron">
-    <h1>Bottle</h1>
-    <p class="lead">Bottle is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+<div class="jumbotron text-center">
+    <h1 class="animate__animated animate__fadeIn">Детская школа анимации</h1>
+    <p class="lead animate__animated animate__fadeIn">Добро пожаловать на сайт детской школы анимации. Здесь вы найдете всю необходимую информацию о нашей школе и курсах.</p>
+    <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large animate__animated animate__fadeIn">Узнать больше &raquo;</a></p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Начните учиться</h2>
         <p>
-            <b>Пора садится на бутылку</b> gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            <b>Детская школа анимации</b> предоставляет вам мощный инструмент для создания динамических веб-сайтов,
+            обеспечивая чистое разделение ответственностей и полный контроль над разметкой для приятной и гибкой разработки.
         </p>
-        <p><a class="btn btn-default" href="http://bottlepy.org/docs/dev/index.html">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="http://bottlepy.org/docs/dev/index.html">Узнать больше &raquo;</a></p>
     </div>
 </div>
+
+<style>
+    body {
+        background-image: url('static/images/fon.jpg');
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .jumbotron {
+        animation: fadeInAnimation 2s;
+    }
+
+    @keyframes fadeInAnimation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+
